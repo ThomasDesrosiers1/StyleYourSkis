@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
 
-    <title>ChoisisTesSkis</title>
+    <title>FindYourDesigns</title>
 
     <!-- CSS Normalize -->
 
@@ -20,6 +20,7 @@
     
     <!-- Material Icons -->
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <!-- CSS Style -->
@@ -49,9 +50,23 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <a class="search" href=""><span class="material-symbols-outlined">search</span></a>
     </div>
     
 </header>
+
+
+
+<div class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form action="#" method="get">
+        <input type="text" placeholder="À la recherche de quelque chose?">
+        <button type="submit">Rechercher</button>
+      </form>
+    </div>
+  </div>
 
 
 <!-- Section Hero -->
@@ -60,9 +75,12 @@
     <div class="wrapper">
         <div class="texte-hero">
             <h1>Tu recherches un design unique?</h1>
-            <h2>Choisis en un parmi plein d'artistes talentueux situés à traver le monde entier.</h2>
+            <h2>Choisis parmi des artistes talentueux situés à travers le monde entier.</h2>
 
             <a href="#designs" class="bouton-shop">Shop</a>
+            <div class="bg-texte-hero">
+            </div>
+
         </div>
 
     </div>
@@ -71,13 +89,16 @@
 <!-- Section Mission -->
 
 <section id="mission" class="mission">
+    <div class="bg-texte-mission">
+        </div>
     <div class="wrapper">
         <div class="texte-mission">
             <h3>NOTRE MISSION</h3>
             <p>Lorem ipsum dolor sit amet consectetur. Scelerisque laoreet congue amet viverra velit. Nibh cursus massa eget sem pulvinar imperdiet. Sem cras mattis tincidunt ornare id augue auctor nunc. Blandit a odio nisi convallis nisi in tincidunt egestas. Vulputate duis sem ut viverra semper enim. Fringilla amet elementum condimentum quam arcu consequat diam a. Congue pellentesque sed donec ultricies nibh magna.</p>
         </div>
+        
 
-        <!-- <img src="images/mission.png" alt="Mission"> -->
+        <img class="img-mission" src="images/mission3.jpg" alt="Mission">
 
     </div>
 </section>

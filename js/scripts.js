@@ -10,3 +10,15 @@ function openMenu(){
   menuCategories.classList.toggle("visible");
   
 }
+
+
+//======== FENÊTRE MODALE ========//
+
+const searchLink = document.querySelector('.search');
+
+searchLink.addEventListener('click', openModal);
+
+function openModal() {
+  const modal = document.querySelector('.modal');
+  modal.classList.toggle('active');
+}
