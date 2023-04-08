@@ -388,12 +388,13 @@ button[type="submit"]:hover {
   flex-direction: column;
 }
 
-#dropdown-categories a{
-  font: 500 1.2rem var(--font-Quicksand);
+.checkbox-categ{
+  display: flex;
+  gap: .5rem;
 }
 
-#dropdown-categories a:hover{
-  color: lightgray;
+#dropdown-categories li{
+  font: 500 1.2rem var(--font-Quicksand);
 }
 
 .dropdown-arrow1, .dropdown-arrow2{
