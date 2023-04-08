@@ -705,51 +705,95 @@ button[type="submit"]:hover {
 
 /* ==== Section Services ==== */
 
+.services{
+  border-top: solid 5rem var(--black);
+  height: 1200px;
+}
+
 .services .wrapper{
   position: relative;
 }
 
-.grid-services{
-  position: absolute;
-  top: 200%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .services h2{
-    margin: 0 auto;
-    padding-bottom: 3rem;
+    padding-top: 100px;
+    position: absolute;
+    right: 40%;
     font: bold 3rem var(--font-Montserrat);
     text-align: center;
     color: var(--black);
+}
+
+.grid-services{
+  position: absolute;
+  top: 300px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contenu-service h3{
+  padding: 1rem 2rem 1rem;
+  font: 900 2.4rem var(--font-Montserrat);
+  color: var(--black);
+  border-bottom: solid 4px var(--black);
+  text-shadow: 1px 1px rgba(255, 255, 255, .8);
 }
 
 .contenu-service{
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: solid 2px black;
-  background-color: #aaaaaa;
-  height: 300px;
+  align-items: flex-start;
+  /* background-color: #aaaaaa; */
+  height: 400px;
   width: 500px;
 }
 
 .contenu-service a{
     display: inline-block;
     position: absolute;
-    right: 5%;
-    bottom: 5%;
+    right: 35%;
+    bottom: 45%;
     font: bold 3rem var(--font-Montserrat);
     color: var(--black);
+    border: solid 4px white;
     padding: 0 1rem 0;
-    background-color: white;
+    transition: all .1s ease-in;
 }
 
 .contenu-service a:hover{
-  color: white;
-  background-color: var(--black);
+  color: black;
+  border: solid 4px var(--black);
+  background-color: white;
   cursor: pointer;
+}
+
+.inspection{
+  background-image: url(../images/inspection.svg);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: left 30% center;
+}
+
+.fixations{
+  background-image: url(../images/fixations.svg);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: left 25% center;
+}
+
+.maintenance{
+  background-image: url(../images/maintenance.svg);
+  background-repeat: no-repeat;
+  background-size: 18%;
+  background-position: left 30% center;
+}
+
+.reparation{
+  background-image: url(../images/repair.svg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: left 25% center;
 }
 
 
