@@ -14,11 +14,22 @@ function openMenu(){
 
 //======== FENÊTRE MODALE ========//
 
+const modal = document.querySelector('.modal');
 const searchLink = document.querySelector('.search');
+const close = document.querySelector('.close');
 
 searchLink.addEventListener('click', openModal);
+close.addEventListener("click", closeModal);
+
 
 function openModal() {
-  const modal = document.querySelector('.modal');
-  modal.classList.toggle('active');
+
+  modal.classList.add('active');
+  
+}
+
+function closeModal(){
+
+  modal.classList.remove('active');
+
 }
