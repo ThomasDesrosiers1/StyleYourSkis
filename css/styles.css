@@ -291,8 +291,8 @@ button[type="submit"]:hover {
 .fusee{
   height: 100px;
   position: absolute;
-  top: 15%;
-  left: 30%
+  top: 10%;
+  left: 25%
 }
 
 .mission .wrapper{
@@ -317,15 +317,6 @@ button[type="submit"]:hover {
   justify-content: center;
 }
 
-/* .bg-texte-mission{
-  position: absolute;
-  left: -2%;
-  top: 0;
-  z-index: -3;
-  background-image: linear-gradient(to left, white, rgba(0, 0, 0, 0.1));
-  height: 500px;
-  width: 600px;
-} */
 
 
 .mission h3{
@@ -343,44 +334,10 @@ button[type="submit"]:hover {
   width: 35%;
 }
 
-/* ==== Section Designs ==== */
+/* ==== SECTION ALL DESIGNS ==== */
 
 
-/* == Side-menu == */
-
-.colonne-menu{
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.menu-categories{
-  display: flex;
-  flex-direction: column;
-}
-
-.side-menu{
-  margin-top: 20px;
-}
-
-.side-menu h4{
-  padding-bottom: 5px;
-  margin: 0;
-  font: 500 2.4rem var(--font-Montserrat);
-}
-
-.side-menu nav{
-  padding-top: 20px;
-}
-
-.side-menu nav li{
-  font: 500 2rem var(--font-Quicksand);
-}
-
-.side-menu nav a:hover{
-  color: white;
-}
+/* == SIDE-MENUS == */
 
 .list-design .wrapper{
   display: flex;
@@ -397,19 +354,55 @@ button[type="submit"]:hover {
   gap: 20px;
 }
 
+.colonne-menu{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .side-menu{
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-.dropdown-arrow{
+.side-menu{
+  margin-top: 20px;
+}
+
+.side-menu h4{
+  padding-bottom: 5px;
+  margin: 0;
+  font: 500 2.4rem var(--font-Montserrat);
+}
+
+.side-menu nav{
+  padding-top: 20px;
+}
+
+/* MENU CATEGORIES */
+
+.menu-categories{
+  display: flex;
+  flex-direction: column;
+}
+
+#dropdown-categories a{
+  font: 500 1.2rem var(--font-Quicksand);
+}
+
+#dropdown-categories a:hover{
+  color: lightgray;
+}
+
+.dropdown-arrow1, .dropdown-arrow2{
   color: black;
   border: 1px solid black;
   border-radius: 50%;
 }
 
-.dropdown-arrow:hover{
+.dropdown-arrow1:hover, .dropdown-arrow2:hover{
   color: white;
   background-color: black;
 }
@@ -433,6 +426,117 @@ button[type="submit"]:hover {
   display: block;
 }
 
+/* MENU COULEURS */
+
+.grid-couleurs{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100px;
+  gap: 10px;
+}
+
+.couleur1{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border: solid 1px gold;
+  border-radius: 50%;
+  background-color: gold;
+}
+
+.couleur2{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border: solid 1px turquoise;
+  border-radius: 50%;
+  background-color: turquoise;
+}
+
+.couleur3{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border: solid 1px red;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.couleur4{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border: solid 1px blueviolet;
+  border-radius: 50%;
+  background-color: blueviolet;
+}
+
+.couleur5{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border: solid 1px grey;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.couleur6{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border: solid 1px brown;
+  border-radius: 50%;
+  background-color: brown;
+}
+
+.couleur7{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border: solid 1px var(--black);
+  border-radius: 50%;
+  background-color: var(--black);
+}
+
+.couleur8{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border: solid 1px var(--black);
+  border-radius: 50%;
+  background-color: white;
+}
+
+.couleur1:hover,
+.couleur2:hover,
+.couleur3:hover,
+.couleur4:hover,
+.couleur5:hover,
+.couleur6:hover{
+  border-color: var(--black);
+}
+
+.couleur7:hover{
+  border-color: white;
+}
+
+.couleur8:hover{
+  border-color: var(--light-grey);
+}
+
+#dropdown-couleurs{
+  margin: 0;
+  display: none;
+  transition: .2s;
+}
+
+#dropdown-couleurs.visible{
+  height: 150px;
+  display: block;
+}
+
+/* MENU PRIX */
+
 /* ============= */
 
 /* ===========SECTION DESIGNS============ */
@@ -454,6 +558,14 @@ button[type="submit"]:hover {
     font: bold 3rem var(--font-Montserrat);
     color: var(--black);
 }  
+
+.diamant{
+  top: 7%;
+  left: 55%;
+  position: absolute;
+  height: 90px;
+  width: 90px;
+}
 
 .design h3{
     margin-top: 50px;
