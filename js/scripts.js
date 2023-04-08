@@ -39,3 +39,86 @@ function closeModal(){
   modal.classList.remove('active');
 
 }
+
+
+//======== SECTION SERVICES ========//
+
+//========Inspection
+
+const inspectionBouton = document.querySelector('.info-inspection');
+const inspectionTexte = document.querySelector('.inspection-text');
+
+inspectionBouton.addEventListener("mouseover", ouvreInspection);
+inspectionBouton.addEventListener("mouseout", fermeInspection);
+
+function ouvreInspection(){
+  
+  inspectionTexte.classList.add('active');
+
+}
+
+function fermeInspection(){
+  
+  inspectionTexte.classList.remove("active");
+  
+}
+
+//========Fixations
+
+const fixationsBouton = document.querySelector('.info-fixations');
+const fixationsTexte = document.querySelector('.fixations-text');
+
+fixationsBouton.addEventListener("mouseover", ouvreFixations);
+fixationsBouton.addEventListener("mouseout", fermeFixations);
+
+function ouvreFixations(){
+  
+  fixationsTexte.classList.add('active');
+
+}
+
+function fermeFixations(){
+  
+  fixationsTexte.classList.remove("active");
+  
+}
+
+//========Maintenance
+
+const maintenanceBouton = document.querySelector('.info-maintenance');
+const maintenanceTexte = document.querySelector('.maintenance-text');
+
+maintenanceBouton.addEventListener("mouseover", ouvreMaintenance);
+maintenanceBouton.addEventListener("mouseout", fermeMaintenance);
+
+function ouvreMaintenance(){
+  
+  maintenanceTexte.classList.add('active');
+
+}
+
+function fermeMaintenance(){
+  
+  maintenanceTexte.classList.remove("active");
+  
+}
+
+//========Réparation
+
+const reparationBouton = document.querySelector('.info-reparation');
+const reparationTexte = document.querySelector('.reparation-text');
+
+reparationBouton.addEventListener("mouseover", ouvreReparation);
+reparationBouton.addEventListener("mouseout", fermeReparation);
+
+function ouvreReparation(){
+  
+  reparationTexte.classList.add('active');
+
+}
+
+function fermeReparation(){
+  
+  reparationTexte.classList.remove("active");
+  
+}

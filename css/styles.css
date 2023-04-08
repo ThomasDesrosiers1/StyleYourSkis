@@ -227,6 +227,7 @@ button[type="submit"]:hover {
 }
 
 .texte-hero{
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -645,11 +646,11 @@ button[type="submit"]:hover {
     font-size: 5rem;
     height: 100px;
     pointer-events: all;
-    transition: 0.5s;
+    transition: .5s;
   }
   
   .design:hover .product{
-    transform: translate(10%,0);
+    transform: translate(15%,0);
     height: 200px;
   }
   
@@ -717,17 +718,24 @@ button[type="submit"]:hover {
 .services h2{
     padding-top: 100px;
     position: absolute;
-    right: 40%;
+    right: 45%;
     font: bold 3rem var(--font-Montserrat);
     text-align: center;
     color: var(--black);
+}
+
+.lightbulb{
+  position: absolute;
+  height: 100px;
+  top: 90px;
+  left: 55%;
 }
 
 .grid-services{
   position: absolute;
   top: 300px;
   display: grid;
-  gap: 2rem;
+  column-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -752,7 +760,7 @@ button[type="submit"]:hover {
 .contenu-service a{
     display: inline-block;
     position: absolute;
-    right: 35%;
+    right: 30%;
     bottom: 45%;
     font: bold 3rem var(--font-Montserrat);
     color: var(--black);
@@ -772,28 +780,126 @@ button[type="submit"]:hover {
   background-image: url(../images/inspection.svg);
   background-repeat: no-repeat;
   background-size: 25%;
-  background-position: left 30% center;
+  background-position: left 37% center;
+  visibility: visible;
 }
+
+.inspection-text{
+  position: absolute;
+  width: 30%;
+  left: 30%;
+  bottom: 30%;
+  visibility: hidden;
+  opacity: 0;
+  transition: .7s; 
+}
+
+.inspection-text.active{
+  visibility: visible;
+  opacity: 100%;
+}
+
+.inspection-text p{
+  z-index: 2;
+  background-color: white;
+  margin: 0;
+  font: 500 1.4rem/160% var(--font-Quicksand);
+  color: var(--black);
+  
+}
+
 
 .fixations{
   background-image: url(../images/fixations.svg);
   background-repeat: no-repeat;
   background-size: 25%;
-  background-position: left 25% center;
+  background-position: left 38% center;
+}
+
+.fixations-text{
+  position: absolute;
+  width: 30%;
+  left: 30%;
+  bottom: 30%;
+  visibility: hidden;
+  opacity: 0;
+  transition: .7s; 
+}
+
+.fixations-text.active{
+  visibility: visible;
+  opacity: 100%;
+}
+
+.fixations-text p{
+  z-index: 2;
+  background-color: white;
+  margin: 0;
+  font: 500 1.4rem/160% var(--font-Quicksand);
+  color: var(--black);
+  
 }
 
 .maintenance{
   background-image: url(../images/maintenance.svg);
   background-repeat: no-repeat;
   background-size: 18%;
-  background-position: left 30% center;
+  background-position: left 37% center;
+}
+
+.maintenance-text{
+  position: absolute;
+  width: 30%;
+  left: 30%;
+  bottom: 30%;
+  visibility: hidden;
+  opacity: 0;
+  transition: .7s; 
+}
+
+.maintenance-text.active{
+  visibility: visible;
+  opacity: 100%;
+}
+
+.maintenance-text p{
+  z-index: 2;
+  background-color: white;
+  margin: 0;
+  font: 500 1.4rem/160% var(--font-Quicksand);
+  color: var(--black);
+  
 }
 
 .reparation{
   background-image: url(../images/repair.svg);
   background-repeat: no-repeat;
   background-size: 20%;
-  background-position: left 25% center;
+  background-position: left 35% center;
+}
+
+.reparation-text{
+  position: absolute;
+  width: 30%;
+  left: 30%;
+  bottom: 30%;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s; 
+}
+
+.reparation-text.active{
+  visibility: visible;
+  opacity: 100%;
+}
+
+.reparation-text p{
+  z-index: 2;
+  background-color: white;
+  margin: 0;
+  font: 500 1.4rem/160% var(--font-Quicksand);
+  color: var(--black);
+  
 }
 
 
