@@ -60,12 +60,13 @@ a{
 header{
   background-color: white;
   z-index: 2;
-  padding-top: 35px;
+  padding-top: 30px;
   width: 6500px;
-  height: 100px;
+  height: 200px;
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
+  border-bottom: solid 5rem var(--black);
 }
 
 header .wrapper{
@@ -74,8 +75,9 @@ header .wrapper{
   align-items: center;
 }
 
-header img{
-  padding-left: 50px;
+.logo{
+  height: 40%;
+  width: 40%;
 }
 
 /* ==== Nav ====*/
@@ -207,15 +209,12 @@ button[type="submit"]:hover {
 
 
 
-
-
-
-/* ==== Hero ==== */
+/* ==== HERO ==== */
 
 .hero{
   z-index: -2;
-  height: 700px;
-  background-image: url("../images/hero3.jpg");
+  height: 800px;
+  background-image: url("../images/hero4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,24 +250,26 @@ button[type="submit"]:hover {
   font: 600 6.4rem/90% var(--font-Montserrat);
   letter-spacing: 4px;
   width: 75%;
-  color: var(--black);
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
 .hero h2{
   z-index: 1;
   width: 75%;
-  font: 600 3rem var(--font-Quicksand);
-  color: var(--black);
+  font: 600 3.6rem var(--font-Quicksand);
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
 .bouton-shop{
   margin-top: 6rem;
   z-index: 1;
-  font: 500 4rem var(--font-Quicksand);
+  font: 500 5rem var(--font-Quicksand);
   color: var(--black);
   background-color: white;
   padding: 1rem 3rem 1rem; 
-  border: solid 3px var(--black);
+  border: solid 3px white;
   transition: all 0.2s ease 0s;
 }
 
@@ -281,6 +282,13 @@ button[type="submit"]:hover {
 
 /* ==== Section Mission ==== */
 
+.anchor-mission{
+  display: block;
+  position: absolute;
+  top: -35%;
+  visibility: hidden;
+}
+
 .mission{
   position: relative;
   border-top: solid 5rem black;
@@ -292,7 +300,7 @@ button[type="submit"]:hover {
   height: 100px;
   position: absolute;
   top: 10%;
-  left: 25%
+  left: 26.5%
 }
 
 .mission .wrapper{
@@ -354,11 +362,17 @@ button[type="submit"]:hover {
   gap: 20px;
 }
 
+/* .colonne-menu-bg{
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.05);
+} */
+
 .colonne-menu{
-  padding-top: 50px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  
 }
 
 .side-menu{
@@ -561,7 +575,7 @@ button[type="submit"]:hover {
 }  
 
 .diamant{
-  top: 7%;
+  top: 4%;
   left: 55%;
   position: absolute;
   height: 90px;
@@ -684,12 +698,59 @@ button[type="submit"]:hover {
   }
 
 
-  .ski-design1{
+  .ski-design{
     height: 350px;
   }
 
 
 /* ==== Section Services ==== */
+
+.services .wrapper{
+  position: relative;
+}
+
+.grid-services{
+  position: absolute;
+  top: 200%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.services h2{
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    font: bold 3rem var(--font-Montserrat);
+    text-align: center;
+    color: var(--black);
+}
+
+.contenu-service{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black;
+  background-color: #aaaaaa;
+  height: 300px;
+  width: 500px;
+}
+
+.contenu-service a{
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    font: bold 3rem var(--font-Montserrat);
+    color: var(--black);
+    padding: 0 1rem 0;
+    background-color: white;
+}
+
+.contenu-service a:hover{
+  color: white;
+  background-color: var(--black);
+  cursor: pointer;
+}
 
 
 
