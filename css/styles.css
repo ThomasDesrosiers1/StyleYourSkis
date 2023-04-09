@@ -214,7 +214,7 @@ button[type="submit"]:hover {
 .hero{
   z-index: -2;
   height: 800px;
-  background-image: url("../images/hero4.jpg");
+  background-image: url("../images/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -346,13 +346,23 @@ button[type="submit"]:hover {
 /* ==== SECTION ALL DESIGNS ==== */
 
 
-/* == SIDE-MENUS == */
-
 .list-design .wrapper{
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  gap: 70px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1700px;
 }
+
+.list-design h2{
+  position: absolute;
+  left: 40%;
+  top: 100px;
+  margin: 0 auto;
+  font: bold 3rem var(--font-Montserrat);
+  color: var(--black);
+} 
 
 .list-design .wrapper nav ul{
   padding: 20px 0 0 0;
@@ -360,20 +370,27 @@ button[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   gap: 20px;
 }
 
-/* .colonne-menu-bg{
+
+
+/* == SIDE-MENUS == */
+
+
+
+.rangee-menu-bg{
   height: 800px;
   background-color: rgba(0, 0, 0, 0.05);
-} */
+}
 
-.colonne-menu{
-  padding-top: 30px;
+.rangee-menu{
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 0px;
+  width: 700px;
 }
 
 .side-menu{
@@ -399,6 +416,8 @@ button[type="submit"]:hover {
 /* MENU CATEGORIES */
 
 .menu-categories{
+  position: absolute;
+  left: 0;
   display: flex;
   flex-direction: column;
 }
@@ -416,6 +435,12 @@ button[type="submit"]:hover {
   color: black;
   border: 1px solid black;
   border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 0.2s;
+}
+
+.dropdown-arrow1.rotate, .dropdown-arrow2.rotate{
+  transform: rotate(180deg);
 }
 
 .dropdown-arrow1:hover, .dropdown-arrow2:hover{
@@ -424,6 +449,7 @@ button[type="submit"]:hover {
 }
 
 #dropdown-categories ul{
+  margin: 0;
   padding-bottom: 30px;
 }
 
@@ -444,9 +470,14 @@ button[type="submit"]:hover {
 
 /* MENU COULEURS */
 
+.menu-couleurs{
+  position: absolute;
+  left: 30%;
+}
+
 .grid-couleurs{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   width: 100px;
   gap: 10px;
 }
@@ -557,23 +588,24 @@ button[type="submit"]:hover {
 
 /* ===========SECTION DESIGNS============ */
 
-#designs{
+.anchor-designs{
+  display: block;
+  position: absolute;
+  top: -10%;
+  visibility: hidden;
+}
+
+.list-design{
   background-color: white;
 }
 
 .all-designs{
+  position: relative;
+  top: 200px;
+  right: 2%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.list-design h2{
-    position: absolute;
-    left: 40%;
-    top: 100px;
-    margin: 0 auto;
-    font: bold 3rem var(--font-Montserrat);
-    color: var(--black);
-}  
+  grid-template-columns: repeat(3, 1fr);
+} 
 
 .diamant{
   top: 4%;
@@ -595,16 +627,6 @@ button[type="submit"]:hover {
     width: 100px;
     
   }
-  
-
-  .list-design .wrapper{
-    position: relative;
-    padding-top: 200px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
- 
   
   .item{
     height: 400px;
@@ -706,8 +728,17 @@ button[type="submit"]:hover {
 
 /* ==== Section Services ==== */
 
+
+.anchor-services{
+  position: absolute;
+  display: block;
+  top: -180px;
+  visibility: hidden;
+}
+
 .services{
   border-top: solid 5rem var(--black);
+  border-bottom: solid 5rem var(--black);
   height: 1200px;
 }
 
@@ -902,6 +933,8 @@ button[type="submit"]:hover {
   
 }
 
+
+/* ==== Section Articles ==== */
 
 
 

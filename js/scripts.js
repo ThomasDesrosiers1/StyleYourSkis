@@ -1,13 +1,17 @@
 
 //======= MENU-DROPDOWN =======//
 
-document.querySelector(".dropdown-arrow1").addEventListener("click", openMenuCategories);
-document.querySelector(".dropdown-arrow2").addEventListener("click", openMenuCouleurs);
+const boutonCategories = document.querySelector(".dropdown-arrow1");
+const boutonCouleurs = document.querySelector(".dropdown-arrow2");
+
+boutonCategories.addEventListener("click", openMenuCategories);
+boutonCouleurs.addEventListener("click", openMenuCouleurs);
 
 function openMenuCategories(){
 
   let menuCategories = document.getElementById("dropdown-categories");
   menuCategories.classList.toggle("visible");
+  boutonCategories.classList.toggle("rotate");
    
 }
 
@@ -15,6 +19,7 @@ function openMenuCouleurs(){
 
   let menuCouleurs = document.getElementById("dropdown-couleurs");
   menuCouleurs.classList.toggle("visible");
+  boutonCouleurs.classList.toggle("rotate");
 }
 
 
