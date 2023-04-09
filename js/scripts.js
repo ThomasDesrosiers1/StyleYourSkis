@@ -127,3 +127,9 @@ function fermeReparation(){
   reparationTexte.classList.remove("active");
   
 }
+
+
+//========== SECTION ARTICLES ============//
+
+
+
