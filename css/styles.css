@@ -1012,6 +1012,66 @@ button[type="submit"]:hover {
   transform: translate(0, -10px);
 }
 
+.carousel-items a.article3{
+  margin: 0;
+  padding: 1rem 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 4px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: calc(45% - .5rem);
+  left: calc(25.5% - .5rem);
+  font: 900 3rem var(--font-Montserrat);
+  color: white;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.carousel-items a.article3:hover{
+  border-color: white;
+  background-color: var(--black);
+  transform: translate(0, -10px);
+}
+
+.carousel-items a.article4{
+  margin: 0;
+  padding: 1rem 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 4px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: calc(45% - .5rem);
+  left: calc(17% - .5rem);
+  font: 900 3rem var(--font-Montserrat);
+  color: white;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.carousel-items a.article4:hover{
+  border-color: white;
+  background-color: var(--black);
+  transform: translate(0, -10px);
+}
+
+.carousel-items a.article5{
+  margin: 0;
+  padding: 1rem 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 4px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: calc(45% - .5rem);
+  left: calc(18% - .5rem);
+  font: 900 3rem var(--font-Montserrat);
+  color: white;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.carousel-items a.article5:hover{
+  border-color: white;
+  background-color: var(--black);
+  transform: translate(0, -10px);
+}
+
 .carousel-items{
   position: relative;
   transition: transform 0.3s ease-in-out;
