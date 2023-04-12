@@ -10,6 +10,11 @@ html::-webkit-scrollbar{
   display: none;
 }
 
+::selection{
+  background-color: var(--black);
+  color: var(--light-grey);
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -410,10 +415,18 @@ button[type="submit"]:hover {
 /* == SIDE-MENUS == */
 
 
+hr.ligne1{
+  border: solid 1px rgba(0, 0, 0, 0.05);
+  width: 1100px;
+  position: absolute;
+  top: 14%;
+}
 
-.rangee-menu-bg{
-  height: 800px;
-  background-color: rgba(0, 0, 0, 0.05);
+hr.ligne2{
+  border: solid 1px rgba(0, 0, 0, 0.05);
+  width: 1100px;
+  position: absolute;
+  top: 28%;
 }
 
 .rangee-menu{
@@ -421,7 +434,7 @@ button[type="submit"]:hover {
   gap: 20px;
   background-color: rgba(0, 0, 0, 0.05);
   height: 0px;
-  width: 700px;
+  width: 1100px;
 }
 
 .side-menu{
@@ -632,7 +645,7 @@ button[type="submit"]:hover {
 
 .all-designs{
   position: relative;
-  top: 200px;
+  top: 220px;
   right: 2%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -654,9 +667,9 @@ button[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     font: 500 1.6rem var(--font-Quicksand);
-    text-align: center;
+    text-align: start;
     height: 20px;
-    width: 80px;
+    width: 70px;
   }
   
   .item{
@@ -1160,7 +1173,6 @@ button[type="submit"]:hover {
 
 .contact{
   height: 700px;
-  border-bottom: solid 5rem var(--black);
 }
 
 .contact .wrapper{
@@ -1231,12 +1243,12 @@ button[type="submit"]:hover {
 /* ==== Footer ==== */
 
 footer{
+  border-top: solid 5rem var(--black);
   height: 100px;
   background-color: white;
 }
 
 footer .wrapper{
-  padding-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1305,4 +1317,37 @@ footer .wrapper{
 
 /* ==== Section Pages Designs ==== */
 
+.page-design{
+  height: 1500px;
+}
 
+.page-design .wrapper{
+  height: inherit;
+  position: relative;
+}
+
+.design-bg{
+  position: absolute;
+  top: 35%;
+  left: -4.5%;
+  height: 450px;
+  width: 450px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.page-design img{
+  position: absolute;
+  top: 25%;
+  left: -15%;
+  height: 50%;
+}
+
+.informations-design{
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
