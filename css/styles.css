@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar{
+  display: none;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -16,7 +20,6 @@ html {
 :root{
   --black: #000;
   --white: #fff;
-  --cta: #2C8E9B;
   --light-grey: #D2D2D2;
   --dark-grey: #797979;
 
@@ -138,6 +141,11 @@ header .wrapper{
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 }
+
+.modal::-webkit-scrollbar{
+  display: none;
+}
+
 .modal.active {
   z-index: 2;
   transform: translateX(0);
@@ -193,7 +201,6 @@ button[type="submit"] {
   padding: 10px 20px;
   border: solid 2px var(--black);
   cursor: pointer;
-  margin-top: 10px;
 }
 
 button[type="submit"]:hover {
@@ -202,6 +209,43 @@ button[type="submit"]:hover {
 }
 
 
+/* ==== RECHERCHE DESIGN ==== */
+
+
+.container-design{
+  display: block;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.container-design::-webkit-scrollbar{
+  display: none;
+}
+
+.product-design{
+  position: relative;
+  margin-top: 30px;
+  height: 300px;
+  width: 690px;
+  display: flex;
+}
+
+.product-design:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.product-design img{
+  height: 300px;
+}
+
+.product-design h2{
+  position: absolute;
+  right: 200px;
+  top: 140px;
+  margin: 0;
+  font: 500 2.6rem var(--font-Montserrat);
+  color: var(--black);
+}
 
 
 /* ==== HERO ==== */
@@ -1186,6 +1230,72 @@ button[type="submit"]:hover {
 /* ==== Footer ==== */
 
 footer{
-  height: 70px;
+  height: 100px;
+  background-color: white;
+}
+
+footer .wrapper{
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-top{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50px;
+}
+
+.medias{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.facebook{
+  background-image: url(../images/Facebook.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+.facebook:hover{
+  background-image: url(../images/FacebookHover.png);
+}
+
+.instagram{
+  background-image: url(../images/Instagram.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+.instagram:hover{
+  background-image: url(../images/InstagramHover.png);
+}
+
+.twitter{
+  background-image: url(../images/Twitter.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+.twitter:hover{
+  background-image: url(../images/TwitterHover.png);
+}
+
+.youtube{
+  background-image: url(../images/Youtube.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+.youtube:hover{
+  background-image: url(../images/YoutubeHover.png);
 }
  

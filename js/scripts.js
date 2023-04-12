@@ -45,6 +45,39 @@ function closeModal(){
 
 }
 
+//======== Fonction de recherche designs
+
+const search = () =>{
+  const searchbox =  document.getElementById("search-design").value.toUpperCase();
+  const storeDesigns = document.getElementById("container-design");
+  const design = document.querySelectorAll(".product-design");
+  const designName = "<b>" + storeDesigns.getElementsByTagName("h2") + "</b>";
+
+  for(var i=0; i < designName.length; i++)
+  {
+    let match = design[i].getElementsByTagName("h2")[0];
+
+    if (match) {
+      const textValue = match.textContent || match.innerHTML;
+      const regExp = new RegExp(searchbox, "gi");
+      const newTextValue = textValue.replace(regExp, (match) => {
+        return "<b>" + match + "</b>";
+      });
+
+      if (textValue.toUpperCase().indexOf(searchbox) > -1) {
+        match.innerHTML = newTextValue;
+        design[i].style.display = "";
+      } else {
+        match.innerHTML = textValue;
+        design[i].style.display = "none";
+      }
+    }
+  }
+
+}
+
+
+
 
 //======== SECTION SERVICES ========//
 
@@ -129,7 +162,8 @@ function fermeReparation(){
 }
 
 
-//========== SECTION CONTACT ============//
+
+
 
 
 
