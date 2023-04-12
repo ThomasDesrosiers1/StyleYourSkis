@@ -1375,7 +1375,7 @@ footer p{
 
 .page-design h3{
   margin: 0;
-  padding-top: 20px;
+  padding: 20px 0 20px;
   font: 500 2rem var(--font-Montserrat);
 }
 
@@ -1392,6 +1392,11 @@ footer p{
 
 p.inventaire{
   color: #51B52E;
+  font: 500 1.4rem/160% var(--font-Quicksand);
+}
+
+p.non-disponible{
+  color: darkred;
   font: 500 1.4rem/160% var(--font-Quicksand);
 }
 
@@ -1440,4 +1445,25 @@ p.inventaire{
   height: 70px;
   width: 70px;
   background-color: turquoise;
+}
+
+.couleur-designB1{
+  border: solid 10px #f0f0f0;
+  height: 70px;
+  width: 70px;
+  background-color: #66198A;
+}
+
+.couleur-designB2{
+  border: solid 10px #f0f0f0;
+  height: 70px;
+  width: 70px;
+  background-color: #7C188C;
+}
+
+.couleur-designB3{
+  border: solid 10px #f0f0f0;
+  height: 70px;
+  width: 70px;
+  background-color: #572260;
 }
