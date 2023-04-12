@@ -1318,7 +1318,7 @@ footer p{
 /* ==== Section Pages Designs ==== */
 
 .page-design{
-  height: 1500px;
+  height: 1200px;
 }
 
 .page-design .wrapper{
@@ -1345,9 +1345,9 @@ footer p{
 
 .page-design img{
   position: absolute;
-  top: 25%;
-  left: -18%;
-  height: 55%;
+  top: 24%;
+  left: -16%;
+  height: 65%;
 }
 
 .informations-design{
@@ -1417,25 +1417,25 @@ p.inventaire{
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding-top: 55px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
-.couleur-design1{
+.couleur-designA1{
   border: solid 10px #f0f0f0;
   height: 70px;
   width: 70px;
   background-color: darkred;
 }
 
-.couleur-design2{
+.couleur-designA2{
   border: solid 10px #f0f0f0;
   height: 70px;
   width: 70px;
   background-color: gold;
 }
 
-.couleur-design3{
+.couleur-designA3{
   border: solid 10px #f0f0f0;
   height: 70px;
   width: 70px;
