@@ -235,13 +235,14 @@ button[type="submit"]:hover {
 }
 
 .product-design img{
+  padding-left: 20px;
   height: 300px;
 }
 
-.product-design h2{
+.product-design a{
   position: absolute;
-  right: 200px;
-  top: 140px;
+  right: 30%;
+  top: 45%;
   margin: 0;
   font: 500 2.6rem var(--font-Montserrat);
   color: var(--black);
